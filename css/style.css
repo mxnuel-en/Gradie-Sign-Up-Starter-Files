@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -12,19 +11,25 @@ body {
     padding: 40px 50px 0;
     background-color: #023243;
     color: white;
-    position: relative;
-    height: 450px;
 }
 .hero-container p{
     color: #86BFD3;
     margin-top: 10px;
 }
+.image-container{
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    /* border: 1px solid white; */
+    height: 330px;
+    overflow: hidden;
+}
 .hero-container img{
     position: absolute;
-    width: 350px;
-    max-width: 400px;
-    left: 15px;
+    right: -40px;
     bottom: 0;
+    width: 350px;
+    height: 450px;
 }
 .login-container{
     background-color: white;
@@ -88,8 +93,7 @@ button{
         margin: 50px auto;
     }
     .hero-container img{
-        left: 25px;
-        bottom: 0;
+        right: -25px;
     }
     .login-container{
         border: 1px solid #BCBCBC;
@@ -105,12 +109,17 @@ button{
     }
     .hero-container{
         width: 50%;
-        height: 471px;
         padding: 40px 40px 0;
         border-radius: 10px 0 0 10px;
+        position: relative;
+    }
+    .image-container{
+        margin-bottom: 0;
+        position: absolute;
+        bottom: 0;
     }
     .hero-container img{
-        left: 30px;
+        left: -15px;
     }
     .login-container{
         width: 50%;
